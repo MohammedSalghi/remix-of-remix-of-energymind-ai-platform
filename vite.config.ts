@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force the server build to run outside Lovable too. Netlify reads
+  // NITRO_PRESET=netlify from netlify.toml, so this emits Netlify Functions
+  // and the correct routing instead of a static-only build that 404s.
+  nitro: true,
 });

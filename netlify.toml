@@ -4,7 +4,7 @@
 
 [build.environment]
   NITRO_PRESET = "netlify"
-  NODE_VERSION = "20"
+  NODE_VERSION = "22.12.0"
 
 # TanStack Start (Nitro) emits its own Netlify functions and _redirects
 # when NITRO_PRESET=netlify, so no extra [[redirects]] block is needed.
