@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
+  NODE_VERSION = "20"
+
+# TanStack Start (Nitro) emits its own Netlify functions and _redirects
+# when NITRO_PRESET=netlify, so no extra [[redirects]] block is needed.
